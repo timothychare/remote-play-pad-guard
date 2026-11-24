@@ -1,0 +1,12 @@
+[Unit]
+Description=Turn off chosen controllers during Steam Remote Play
+
+[Service]
+ExecStart=%h/.local/bin/remote-play-pad-guard
+Restart=on-failure
+RestartSec=5
+# 2 = bad or missing device list; restarting would not help
+RestartPreventExitStatus=2
+
+[Install]
+WantedBy=default.target

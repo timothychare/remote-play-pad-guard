@@ -1,0 +1,3 @@
+# Controllers to turn off while Steam Remote Play is streaming.
+# One USB ID (vendor:product) per line, as shown by lsusb. Replace this example:
+1234:abcd
